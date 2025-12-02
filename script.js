@@ -120,7 +120,7 @@ form.addEventListener('submit', async (e) => {
             updateResultUI(true, 'Berhasil!', data.message || 'Reaksi telah dikirim ke channel.');
             showToast('Reaksi berhasil dikirim!');
         } else {
-            updateResultUI(false, 'Gagal', 'Respon API tidak valid atau terjadi kesalahan.');
+            updateResultUI(false, 'Gagal', 'Respon API error: ' + (data.error || 'Terjadi kesalahan'));
         }
 
     } catch (error) {
