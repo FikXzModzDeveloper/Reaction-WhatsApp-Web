@@ -1,0 +1,28 @@
+body {
+    -webkit-tap-highlight-color: transparent;
+}
+.glass-effect {
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+.emoji-scroll::-webkit-scrollbar {
+    height: 4px;
+}
+.emoji-scroll::-webkit-scrollbar-track {
+    background: transparent;
+}
+.emoji-scroll::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 10px;
+}
+.dark .emoji-scroll::-webkit-scrollbar-thumb {
+    background: #475569;
+}
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-5px); }
+    100% { transform: translateY(0px); }
+}
+.floating-icon {
+    animation: float 3s ease-in-out infinite;
+}
